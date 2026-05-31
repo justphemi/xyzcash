@@ -1,34 +1,3 @@
-// /** @type {import('next').NextConfig} */
-
-// // next.config.js
-// const withPWA = require("next-pwa")({
-//   dest: "public",
-//   register: true,
-//   skipWaiting: true,
-//   disable: process.env.NODE_ENV === "development",
-// })
-
-// module.exports = withPWA({
-//   // your existing config here
-//   reactStrictMode: true,
-// })
-
-
-// const nextConfig = {
-//   eslint: {
-//     ignoreDuringBuilds: true,
-//   },
-//   typescript: {
-//     ignoreBuildErrors: true,
-//   },
-//   images: {
-//     unoptimized: true,
-//   },
-// }
-
-// export default nextConfig
-
-// next.config.mjs
 
 import withPWA from 'next-pwa';
 
