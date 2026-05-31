@@ -12,11 +12,14 @@ export const metadata: Metadata = {
   title: "FST RECORDER - Payment management system for FST",
   description: "Payment management system for the department of software engineering.",
   manifest: "/manifest.json",
-  themeColor: "#000000",
-  viewport: "width=device-width, initial-scale=1, maximum-scale=1",
-    generator: 'v0.dev'
+  // themeColor: "#000000",
+  // viewport: "width=device-width, initial-scale=1, maximum-scale=1",
 }
-
+export const viewport = {
+  themeColor: '#yourcolor',
+  width: 'device-width',
+  initialScale: 1,
+}
 export default function RootLayout({
   children,
 }: {
