@@ -32,6 +32,17 @@
 
 import withPWA from 'next-pwa';
 
+const originalWarn = console.warn;
+console.warn = (...args) => {
+  if (
+    typeof args[0] === 'string' &&
+    args[0].includes('Unsupported metadata')
+  ) {
+    return;
+  }
+  originalWarn(...args);
+};
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
@@ -43,6 +54,9 @@ const nextConfig = {
   },
   images: {
     unoptimized: true,
+  },
+  logging: {
+    fetches: { fullUrl: false }
   },
 };
 
