@@ -1,6 +1,6 @@
 {
-  "name": "FST RECORDER - University Dues Management",
-  "short_name": "FST RECORDER",
+  "name": "SIRIUS FINANCE RECORDS",
+  "short_name": "SFR",
   "description": "Secure PWA for managing departmental dues in university systems",
   "start_url": "/",
   "display": "standalone",
