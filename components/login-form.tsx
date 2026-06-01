@@ -39,7 +39,7 @@ export default function LoginForm() {
 
     try {
       // Check if it's CourseRep login
-      if (identifier === "@ep.saviour" && password === "#FST01") {
+      if (identifier === process.env.NEXT_PUBLIC_ADMIN_USERNAME && password === process.env.NEXT_PUBLIC_ADMIN_PASSWORD) {
         // Handle CourseRep login with session
         const response = await fetch("/api/auth/courserep", {
           method: "POST",
