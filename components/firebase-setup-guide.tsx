@@ -83,7 +83,7 @@ export default function FirebaseSetupGuide() {
               <br />
               Student: Matric <code>20231376642</code> + Password <code>FST RECORDER1</code>
               <br />
-              CourseRep: Username <code>@ep.saviour</code> + Password <code>#FST01</code>
+              {/* CourseRep: Username <code>@ep.saviour</code> + Password <code>#FST01</code> */}
             </p>
           </div>
         </CardContent>

@@ -5,7 +5,7 @@ export async function POST(request: NextRequest) {
     const { username, password } = await request.json()
 
     // Verify CourseRep credentials
-    if (username === "@ep.saviour" && password === "#FST01") {
+    if (username === process.env.NEXT_PUBLIC_ADMIN_USERNAME && password === process.env.NEXT_PUBLIC_ADMIN_PASSWORD) {
       // Create session token
       const sessionToken = `courserep_${Date.now()}_${Math.random().toString(36).substring(2)}`
 

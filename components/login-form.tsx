@@ -34,6 +34,7 @@ export default function LoginForm() {
 
   const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault()
+    console.log({pass:process.env.NEXT_PUBLIC_ADMIN_PASSWORD, user:process.env.NEXT_PUBLIC_ADMIN_USERNAME, id:identifier})
     setIsLoading(true)
     setError("")
 
